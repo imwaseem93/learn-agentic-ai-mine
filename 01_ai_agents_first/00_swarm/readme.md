@@ -1,7 +1,8 @@
 # Swarm
+OpenAI first attempt towards multi-agent systems. Focussed to agent to agent communication based on a pattern (handoff). Experimental only, Agentic SDK based on this. 
 
 OpenAI's Swarm is an experimental framework designed to facilitate lightweight and ergonomic orchestration of multi-agent systems. It introduces two primary abstractions: **Agents**, which encompass specific instructions and tools, and **handoffs**, enabling agents to transfer control to one another. This design allows for scalable and testable coordination among multiple AI agents, each specializing in distinct tasks, to collaboratively achieve complex objectives.
-
+Routines: Agent follow routines to do tasks
 In recent developments, OpenAI has released the **Agents SDK**, a production-ready evolution of the Swarm framework. The Agents SDK builds upon the foundational concepts introduced in Swarm, offering enhanced features for orchestrating the workflow of multiple AI agents. This advancement enables developers to manage and coordinate complex tasks more effectively, ensuring that various agents work harmoniously towards unified goals. 
 
 Therefore, the recently released OpenAI Agents SDK is indeed based on the design patterns and principles initially explored in the Swarm framework, marking a significant step towards more sophisticated and integrated multi-agent AI systems.
@@ -26,11 +27,11 @@ https://www.anthropic.com/engineering/building-effective-agents
 
 **1. Prompt Chaining (Chain Workflow):**
 
-This pattern involves breaking down complex tasks into a sequence of simpler, manageable steps, where each step builds upon the previous one. The Agents SDK supports this by allowing developers to define agents that execute specific functions in a predetermined order, ensuring a structured approach to task completion. 
+This pattern involves breaking down complex tasks into a sequence of simpler, manageable steps, where each step builds upon the previous one. The Agents SDK supports this by allowing developers to define agents that execute specific functions in a predetermined order, ensuring a structured approach to task completion. Dsitribution enhances scalability.
 
 **2. Routing:**
 
-Routing entails directing tasks to the most appropriate agent based on the task's nature. The Agents SDK facilitates this through its handoff mechanism, enabling agents to transfer control to other agents better suited to handle specific subtasks, thereby optimizing task management. 
+Routing entails directing tasks to the most appropriate agent based on the task's nature. The Agents SDK facilitates this through its handoff mechanism, enabling agents to transfer control to other agents better suited to handle specific subtasks, thereby optimizing task management. There will be a "Main agent" that will decide and communicate with related agents which handle routing by handoff mechanism. 
 
 **3. Parallelization:**
 
