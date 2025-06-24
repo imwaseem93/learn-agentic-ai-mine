@@ -46,7 +46,8 @@ Here are the key details:
 What truly sets the Agents SDK apart is its thoughtful balance of simplicity and power. The SDK is built around four core primitives:
 
 - **Agents:**  
-  These are language models (LLMs) that are preconfigured with specific instructions, access to tools (like web search or file retrieval), and even safety guardrails. Agents can generate responses and decide which tool to call based on the context.  
+  These are language models (LLMs) that are preconfigured with specific instructions, access to tools (like web search or file retrieval), and even safety guardrails. Agents can generate responses and decide which tool to call based on the context.
+  Are agents LLMs? Not inherently. An LLM can power an agent, but an agent is a broader system that integrates an LLM (or other AI models) with capabilities like autonomy, tool use, and decision-making. For example, an agent might use an LLM for natural language understanding but rely on reinforcement learning or rule-based systems for decision-making. 
  
 
 - **Handoffs:**  
