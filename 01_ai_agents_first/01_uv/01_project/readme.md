@@ -23,7 +23,7 @@ Activate virtual environment:
     source .venv/bin/activate
 
     In Windows 
-    \explore-uv\.venv\Scripts\activate
+    .venv\Scripts\activate
 
 Select Recommended Python Interpreter (./.venv/bin/python) created by virtual envirnoment in VSCode
 

@@ -69,7 +69,7 @@ This minimalist approach makes the SDK approachable for newcomers while providin
 ### Key Features
 
 - **Python-First Design:**  
-  The SDK is designed to integrate naturally with Python. Developers can quickly set up agents, define the tools they can use (even converting Python functions into callable tools), and chain together workflows without needing a steep learning curve.
+  The SDK is designed to integrate naturally with Python. Developers can quickly set up agents, define the tools they can use (even converting Python functions into callable tools), and chain together workflows without needing a steep learning curve. It means the OpenAI Agents SDK uses simple, familiar Python code to build and manage AI agents. It avoids complex or new frameworks, letting developers use regular Python functions, loops, and tools to create workflows easily.
 
 - **Built-in Agent Loop:**  
   When you run an agent with the SDK, it automatically enters a loop where it:
