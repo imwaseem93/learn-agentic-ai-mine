@@ -21,7 +21,9 @@ Instead of writing code you can use cli to run commands where it's efficient lik
 Packaged applications
 Many use-cases require a package. For example, if you are creating a command-line interface that will be published to PyPI or if you want to define tests in a dedicated directory.
 
-Install uv: Go to powershell with administer permission ans paste  
+Install uv: 
+Go to powershell with administer permission and paste  
+
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 The --package flag can be used to create a packaged application:
@@ -32,7 +34,16 @@ And to install packages in project
 
 To add a dependency:
 
-    uv add crewai
+    uv add package-name
+
+To remove a dependency:
+
+    uv remove package-name
+
+To run a project:
+
+    cd project-name 
+    uv run project-name
 
 
 
