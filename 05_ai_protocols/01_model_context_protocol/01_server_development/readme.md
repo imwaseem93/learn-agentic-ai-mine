@@ -1,1 +1,0 @@
-Introduction to MCP Server development, the role of FastMCP, using the MCP Inspector with mcp dev, and general server lifecycle.
